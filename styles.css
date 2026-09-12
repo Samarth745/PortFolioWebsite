@@ -38,14 +38,14 @@ nav.links a:hover,nav.links a:focus-visible{color:var(--yellow)}
 .hero h1{font-size:clamp(42px,6vw,78px);max-width:780px;letter-spacing:-.055em}
 .hero .highlight{background:linear-gradient(180deg,transparent 64%,var(--coral) 64%)}
 .hero p.sub{margin-top:20px;color:var(--muted);max-width:650px;font-size:17px}
-.hero-cta{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}
+.hero-cta{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}
 .btn{font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:600;padding:12px 20px;border-radius:3px;display:inline-block}
+.hero-cta .btn{min-width:150px;text-align:center}
 .btn-primary{background:var(--coral);color:#fff}
 .btn-secondary{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
 .hero-badges{display:flex;gap:12px;margin-top:24px;flex-wrap:wrap}
 .badge{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:600;border:1.5px solid var(--border);border-radius:3px;padding:8px 14px}
-.badge.b1{background:var(--yellow);border-color:var(--yellow)}
-.badge.b2{background:transparent;border-color:var(--teal);color:var(--teal)}
+.badge.b1,.badge.b2{background:var(--yellow);border-color:var(--yellow);color:var(--ink)}
 .hero-panel{border:1px solid var(--border);border-radius:6px;padding:26px;background:var(--offwhite)}
 .hero-panel-label{color:var(--coral);font:600 11px 'IBM Plex Mono',monospace;letter-spacing:.1em;text-transform:uppercase}
 .hero-panel h2{color:var(--ink);font-size:27px;margin-top:38px}
@@ -58,14 +58,16 @@ nav.links a:hover,nav.links a:focus-visible{color:var(--yellow)}
 .about-copy strong{color:var(--ink)}
 .about-image{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:3px;border:1px solid var(--border)}
 .sec-head{margin-bottom:40px;max-width:720px}
-.sec-head h2{font-size:clamp(32px,4.2vw,50px);letter-spacing:-.045em}
+.sec-head h2{font-size:clamp(34px,4.5vw,54px);letter-spacing:-.045em}
 .sec-head p{color:var(--muted);margin-top:10px}
 
 .journey-intro,.workflow-intro{max-width:680px;color:var(--muted);margin-top:16px;font-size:17px}
 .journey{position:relative;margin-top:58px;border-top:1px solid var(--border)}
-.journey::before{content:"";position:absolute;left:26px;top:0;bottom:0;border-left:1px dashed var(--border)}
-.journey-step{position:relative;display:grid;grid-template-columns:76px 220px minmax(0,1fr);gap:28px;padding:34px 0;border-bottom:1px solid var(--border)}
-.journey-index{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;width:52px;height:52px;background:var(--paper);border:1px solid var(--coral);border-radius:50%;color:var(--coral);font:600 13px 'IBM Plex Mono',monospace}
+.journey::before{content:"";position:absolute;left:25px;top:0;bottom:0;border-left:2px solid var(--coral);opacity:.22}
+.journey-step{position:relative;display:grid;grid-template-columns:76px 220px minmax(0,1fr);gap:28px;padding:30px 0;border-bottom:1px solid var(--border)}
+.journey-step:last-child{border-bottom:0}
+.journey-index{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;width:52px;height:52px;background:var(--ink);border:4px solid var(--paper);outline:1px solid var(--coral);border-radius:50%;color:var(--yellow);font:600 13px 'IBM Plex Mono',monospace}
+.journey-heading{padding-top:6px}
 .journey-role{font:600 17px 'Space Grotesk',sans-serif}
 .journey-place{color:var(--muted);font:500 12px 'IBM Plex Mono',monospace;margin-top:7px}
 .journey-copy{color:var(--muted);font-size:15px;max-width:620px}
@@ -85,23 +87,32 @@ nav.links a:hover,nav.links a:focus-visible{color:var(--yellow)}
 .side-wrap{background:var(--ink);border-radius:3px;padding:56px 40px}
 .side-wrap .sec-head h2,.side-wrap .sec-head p{color:#fff}
 .side-wrap .sec-head p{color:rgba(255,255,255,.6)}
-.side-content{display:grid;grid-template-columns:minmax(0,1fr) 230px;gap:32px;align-items:start}
+.side-content{display:block}
 .sticker-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .sticker-card{background:#fff;border-radius:3px;padding:26px;color:var(--ink)}
 .sticker-card .emoji{display:none}
 .sticker-card::before{content:"↗";display:block;color:var(--coral);font:600 24px 'IBM Plex Mono',monospace;margin-bottom:20px}
 .sticker-card h4{font-size:16px;margin-bottom:8px}
 .sticker-card p{font-size:13.5px;color:var(--muted)}
-.side-image{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:3px;border:1px solid rgba(244,241,232,.25)}
-
-.skill-cat{margin-bottom:26px}
-.skill-cat .cat-name{font-family:'IBM Plex Mono',monospace;font-size:12.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:12px;display:block}
-.pill-row{display:flex;flex-wrap:wrap;gap:10px}
-.pill{font-size:14px;padding:9px 14px;border-radius:3px;border:1.5px solid var(--border)}
-.pill.c1{border-color:var(--coral);color:var(--coral)}
-.pill.c2{border-color:var(--violet);color:var(--violet)}
-.pill.c3{border-color:var(--teal);color:var(--teal)}
-.pill.c4{border-color:var(--yellow);color:#8a6d00}
+.toolbox-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:44px}
+.skill-cat{margin:0;padding:24px;border:1px solid var(--border);background:rgba(255,255,255,.28);border-top:3px solid var(--coral)}
+.skill-cat:nth-child(2){border-top-color:var(--violet)}
+.skill-cat:nth-child(3){border-top-color:var(--teal)}
+.skill-cat:nth-child(4){border-top-color:var(--yellow)}
+.cat-heading{display:flex;align-items:baseline;gap:12px}
+.cat-number{font:600 12px 'IBM Plex Mono',monospace;color:var(--coral)}
+.skill-cat:nth-child(2) .cat-number{color:var(--violet)}
+.skill-cat:nth-child(3) .cat-number{color:var(--teal)}
+.skill-cat:nth-child(4) .cat-number{color:#8a6d00}
+.skill-cat .cat-name{font-family:'IBM Plex Mono',monospace;font-size:12.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.cat-summary{font-size:13px;color:var(--muted);margin:13px 0 18px;min-height:42px}
+.pill-row{display:flex;flex-wrap:wrap;gap:0 18px}
+.pill{position:relative;font-size:13px;padding:6px 0;color:var(--muted);white-space:nowrap}
+.pill::before{content:"";display:inline-block;width:5px;height:5px;margin:0 8px 2px 0;border-radius:50%;background:var(--border)}
+.pill.c1::before{background:var(--coral)}
+.pill.c2::before{background:var(--violet)}
+.pill.c3::before{background:var(--teal)}
+.pill.c4::before{background:var(--yellow)}
 
 .two-col{display:grid;grid-template-columns:1fr 1fr;gap:36px}
 .list-block h3{font-size:14px;font-family:'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:16px}
@@ -111,13 +122,13 @@ nav.links a:hover,nav.links a:focus-visible{color:var(--yellow)}
 .list-item .t2{font-size:13.5px;color:var(--muted);margin-top:2px}
 .note-box{margin-top:16px;font-size:13px;color:var(--muted);font-style:italic}
 
-.contact{background:var(--coral);color:#fff;text-align:center;padding:100px 0}
-.contact h2{font-size:clamp(28px,4.5vw,42px);color:#fff}
-.contact p{color:rgba(244,241,232,.78);margin-top:14px;font-size:16px}
+.contact{background:var(--paper);color:var(--ink);text-align:center;padding:100px 0;border-top:1px solid var(--border)}
+.contact h2{font-size:clamp(28px,4.5vw,42px);color:var(--ink)}
+.contact p{color:var(--muted);margin-top:14px;font-size:16px}
 .contact-links{display:flex;gap:14px;justify-content:center;margin-top:30px;flex-wrap:wrap}
-.contact .eyebrow{color:rgba(244,241,232,.7)}
-.contact .btn-primary{background:var(--ink)}
-.contact .btn-secondary{background:transparent;color:#fff;border-color:rgba(255,255,255,.4)}
+.contact .eyebrow{color:var(--coral)}
+.contact .btn-primary{background:var(--ink);color:var(--paper)}
+.contact .btn-secondary{background:transparent;color:var(--ink);border-color:var(--ink)}
 footer{background:var(--ink);color:rgba(244,241,232,.55);padding:30px 0;text-align:center;font-size:13px;font-family:'IBM Plex Mono',monospace}
 
 @media(max-width:760px){
@@ -127,12 +138,12 @@ footer{background:var(--ink);color:rgba(244,241,232,.55);padding:30px 0;text-ali
   .hero::after{display:none}
   section{padding:76px 0}
   .about-layout{grid-template-columns:1fr;gap:32px}
-  .about-image,.side-image{max-width:280px}
+  .about-image{max-width:280px}
   .side-wrap{padding:40px 22px}
-  .side-content{grid-template-columns:1fr}
   .sticker-grid{grid-template-columns:1fr}
   .journey-step{grid-template-columns:60px 1fr;gap:18px}
   .journey-copy{grid-column:2}
+  .toolbox-grid{grid-template-columns:1fr}
   .workflow{grid-template-columns:50px 1fr;gap:12px}
   .workflow-detail{grid-column:2;grid-template-columns:1fr;gap:14px}
   .two-col{grid-template-columns:1fr}
