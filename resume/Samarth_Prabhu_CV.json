@@ -1,0 +1,69 @@
+{
+  "name": "Samarth Prabhu",
+  "title": "Senior Data Scientist",
+  "subtitle": "Applied AI & Computer Vision | E-commerce",
+  "location": "Pune, India",
+  "phone": "+91 8169143075",
+  "email": "prabhusamarth001@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/samarth-prabhu/",
+  "portfolio": "",
+  "summary": "Data Scientist with **5+ years** of experience Recognized with **Certificate of Appreciation** and **Outstanding performance** rating for delivering scalable AI solutions and presenting POC's succesfully to VP and CIO-level stakeholders. Experienced in building production-grade AI systems across **e-commerce, marketing, and sales**. Currently architecting 9 computer vision and LLM pipelines at Infosys processing **115K+ product images/month** for a global marketplace, driving **30% catalog attribute coverage** uplift and **90%+ validation accuracy**.",
+  "work_experience": [
+    {
+      "title": "Senior Data Scientist -- Generative AI & Computer Vision",
+      "start_date": "Dec 2024",
+      "end_date": "Present",
+      "company": "Infosys, Pune",
+      "client": "Client: Global E-commerce Marketplace",
+      "achievements": [
+        "Deployed **3+ AI pipelines** processing 115K+ product images/month, including background removal **(object detection)**, subject centering & Image processing **(OpenCV)**, OCR and quality correction workflows.",
+        "Built multimodal image and metadata validation systems using **Deep Learning + LoRA fine-tuning**, achieving **90%+ validation accuracy**.",
+        "Increased product attribute coverage by **30% using multimodal agents** using Langchain for seller descriptions, and image-derived features.",
+        "Achieved **90%+ POC approval rate**; while presenting AI solutions directly to VP and CIO-level stakeholders.",
+        "Awarded **Certificate of Appreciation** and **Outstanding performance rating**."
+      ]
+    },
+    {
+      "title": "Data Scientist",
+      "start_date": "Aug 2022",
+      "end_date": "Dec 2024",
+      "company": "QuantumLink Communications, Mumbai",
+      "achievements": [
+        "Forecasted customer churn at **80% accuracy** using classification and clustering models, enabling targeted retention campaigns.",
+        "Reduced manual sales-log triage effort by **50% using TF-IDF NLP pipelines** and **automated ETL workflows**.",
+        "Saved 2 hours/day through automation of data ingestion and **preprocessing across 3+ data sources**.",
+        "Built **5+ Power BI dashboards** for acquisition, retention, and engagement KPIs used in weekly leadership reviews."
+      ]
+    },
+    {
+      "title": "Business Analyst",
+      "start_date": "Jun 2021",
+      "end_date": "Feb 2022",
+      "company": "Sciative Solutions, Navi Mumbai",
+      "achievements": [
+        "Drove **7% revenue uplift** by improving pricing strategies and market segmentation across multiple clients.",
+        "Reduced pricing audit time by **80%** (5 hrs to 1 hr) through **Python-based profitability audit automation**."
+      ]
+    }
+  ],
+  "skills": {
+    "Computer Vision": "Object detection, OCR, OpenCV, Pillow",
+    "Generative AI & LLMs": "LangChain, RAG, Fine-tuning, Multimodal Agents, MCP",
+    "Machine Learning & Data": "Scikit-learn, Classification, Clustering, NLP, Python, SQL, Pandas, NumPy, Feature Engineering",
+    "BI & Cloud": "Power BI, Google Cloud Platform, Flask, Streamlit, Git"
+  },
+  "education": [
+    {
+      "degree": "M.Sc. Mathematics",
+      "start_year": "2019",
+      "end_year": "2021",
+      "institution": "Mithibai College, Mumbai"
+    },
+    {
+      "degree": "B.Sc. Mathematics",
+      "start_year": "2016",
+      "end_year": "2019",
+      "institution": "Jai Hind College, Mumbai"
+    }
+  ]
+}
