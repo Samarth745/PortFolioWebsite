@@ -74,12 +74,21 @@ nav.links a:hover,nav.links a:focus-visible{color:var(--yellow)}
 .journey-copy strong{color:var(--ink)}
 .journey-label{display:block;color:var(--coral);font:600 11px 'IBM Plex Mono',monospace;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px}
 
-.workflow-list{margin-top:52px;border-top:1px solid var(--border)}
-.workflow{display:grid;grid-template-columns:100px minmax(180px,.7fr) minmax(0,1fr);gap:28px;padding:30px 0;border-bottom:1px solid var(--border)}
-.workflow-number{color:var(--coral);font:600 13px 'IBM Plex Mono',monospace}
+.workflow-list{display:grid;gap:14px;margin-top:52px}
+.workflow{position:relative;display:grid;grid-template-columns:110px minmax(180px,.7fr) minmax(0,1fr);gap:28px;padding:28px 24px 28px 28px;border:1px solid var(--border);border-radius:var(--radius);background:rgba(255,255,255,.025);overflow:hidden;transition:transform .2s ease,border-color .2s ease,background .2s ease}
+.workflow::before{content:"";position:absolute;inset:0 auto 0 0;width:4px;background:var(--coral)}
+.workflow:nth-child(2)::before{background:var(--violet)}
+.workflow:nth-child(3)::before{background:var(--teal)}
+.workflow:hover{transform:translateY(-3px);border-color:rgba(242,201,76,.55);background:rgba(242,201,76,.055)}
+.workflow-number{align-self:start;color:var(--coral);font:600 12px 'IBM Plex Mono',monospace;letter-spacing:.04em;line-height:1.35}
+.workflow:nth-child(2) .workflow-number{color:var(--violet)}
+.workflow:nth-child(3) .workflow-number{color:var(--teal)}
+.workflow-number::before{content:"01";display:block;width:max-content;margin-bottom:14px;padding:4px 7px;border:1px solid currentColor;border-radius:999px;font-size:11px}
+.workflow:nth-child(2) .workflow-number::before{content:"02"}
+.workflow:nth-child(3) .workflow-number::before{content:"03"}
 .workflow h3{font-size:22px}
 .workflow-sub{color:var(--muted);font-size:13px;margin-top:7px}
-.workflow-detail{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.workflow-detail{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-self:center}
 .workflow-detail div{border-left:2px solid var(--border);padding-left:14px}
 .workflow-detail strong{display:block;font:600 11px 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.06em;color:var(--coral)}
 .workflow-detail span{display:block;color:var(--muted);font-size:14px;margin-top:7px}
